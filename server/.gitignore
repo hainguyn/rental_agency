@@ -1,0 +1,47 @@
+# === Environment Variables ===
+.env
+.env.*
+!.env.example  # Giữ lại file mẫu (nếu có)
+.env.local
+
+# === Dependencies ===
+node_modules/
+.pnpm-store/  # Nếu dùng pnpm
+yarn-error.log
+
+# === Build Files ===
+dist/
+build/
+coverage/
+
+# === Logs ===
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# === Runtime Data ===
+*.pid
+*.seed
+*.pem
+
+# === IDE/Editor ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Database ===
+*.db
+*.sqlite
+*-journal
+
+# Thêm các rule này nếu cần
+server/data/*.json
+server/doan.sql
+server/insert.txt
