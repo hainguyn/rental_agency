@@ -42,6 +42,6 @@ Thumbs.db
 *-journal
 
 # Thêm các rule này nếu cần
-server/data/*.json
-server/doan.sql
-server/insert.txt
+data/*.json
+doan.sql
+insert.txt
