@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "leaflet/dist/leaflet.css";
+
+button.slick-arrow::before {
+  font-size: 30px !important;
+  color: whitesmoke !important;
+}
+
+.slick-next {
+  right: 20px !important;
+  top: 48% !important;
+}
+
+.slick-prev {
+  left: 10px !important;
+  z-index: 10 !important;
+  top: 48% !important;
+}
+
+/* Thêm CSS tùy chỉnh vào đây */
+.custom-underline {
+  position: relative;
+  text-decoration: none; /* Ẩn gạch chân mặc định */
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Điều chỉnh khoảng cách dưới văn bản */
+  height: 2px; /* Độ dày của gạch chân */
+  width: 100%;
+  background-color: transparent; /* Màu sắc của gạch chân, ban đầu ẩn */
+  transition: background-color 0.3s ease;
+}
+
+.custom-underline:hover::after {
+  background-color: black; /* Màu sắc của gạch chân khi hover */
+}
+
+.star-item {
+  display: inline-block;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  margin-top: -0.7rem;
+  pointer-events: auto;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  border: solid 1px #bbf7d0;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  margin-top: -0.7rem;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  border: solid 1px #bbf7d0;
+}
+
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  margin-top: -0.7rem;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb:active {
+  border: solid 1px #bbf7d0;
+}
